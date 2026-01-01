@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-slate-900 dark:bg-slate-950 dark:text-white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes glow-edge-loop {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(100%, 0%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  75% {
+    transform: translate(0%, 100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.animate-glow-edge {
+  animation: glow-edge-loop 50s linear infinite;
+  will-change: transform;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "cryptoproject",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix client\" \"npm run dev --prefix admin\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:client": "npm run dev --prefix client",
+    "dev:admin": "npm run dev --prefix admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
