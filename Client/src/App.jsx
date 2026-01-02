@@ -11,6 +11,7 @@ import Withdraw from "./Pages/Dashboard/Withdraw"; // ✅ ADD
 
 import ProtectedRoute from "./Routes/ProtectedRoute";
 import DashboardLayout from "./Components/Dashboard/Layout/DashboardLayout";
+import RewardsPage from "./Pages/Dashboard/Reward";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         {/* WALLET */}
         <Route path="deposit" element={<Deposit />} />
         <Route path="withdraw" element={<Withdraw />} /> {/* ✅ ADD */}
+        <Route path="rewards" element={<RewardsPage />} /> {/* ✅ ADD */}
       </Route>
     </Routes>
   );
