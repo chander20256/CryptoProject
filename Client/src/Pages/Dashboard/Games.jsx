@@ -2,7 +2,7 @@ import GamesSection from "../../Components/Dashboard/Games/GameSection";
 
 const GamesPage = () => {
   return (
-    <div className=" mx-auto">
+    <div className="">
       <GamesSection />
     </div>
   );
