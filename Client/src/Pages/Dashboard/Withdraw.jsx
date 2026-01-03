@@ -49,6 +49,7 @@ const Withdraw = () => {
 
   useEffect(() => {
     loadHistory();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
